@@ -1,3 +1,5 @@
+<!-- the consecutive `/` and `>` are used to separate slides horizontally and vertically -->
+<!-- remove all of them if the final presentation is implemented on some other platform -->
 
 <!-- .slide: data-background="#555" id="the-beginning" -->
 ## Exploratory Testing <!-- .element: style="color:#eee" -->
@@ -100,7 +102,9 @@ Note:
 
 #### Other perspectives
 * Exploratory testing is not a testing technique. It's a way of thinking about testing.
-
+* Exploratory testing is not an equivalence to *quick testing*
+* Exploratory testing is not only functional testing
+* Exploratory testing can involve complex tests which required significant preparation
 Note:
 * Example: after bug regression, a tester may verify the fix of bug then *explore* the fixed software to search for side effects.
 
@@ -155,27 +159,70 @@ find bugs instead of experience the features.
 
   * learning: collect &amp; abstract related information
   * design: ignite the sparks of testing 
-  * execution: doing the test and collect the result
-  * interpretation: 
+  * execution: perform the test and collect the result
+  * interpretation: learn from the test
 
+Note:
+More material can be found from [A tutorial in exploratory testing](./reference/A-Tutorial-in-Exploratory-Testing.pdf)
 ////////////////////////////////////////
-#### Learning
+#### I. Learning
 Learning: collect &amp; abstract information related to testing subject
   - learn from anything that can guide us in what to test, how to test, or how to recognize a problem
   - possible source of the learning process including existing project documentation (requirement, design spec, manual, etc), 
 
 ////////////////////////////////////////
-#### Design
+#### II. Design
+design: ignite the sparks of testing 
 
+* Designing is not scripting. The representation of a plan is not the plan.
+* Explorers’ designs can be reusable.
 
 ////////////////////////////////////////
-#### Execution
-
+design activities by scenario
+* design test based on a story that is motivating and credible
+* The story involves a complex use of the program or a complex environment or a complex set of data.
+* The test results are easy to evaluate.
 
 ////////////////////////////////////////
-#### Interpretation
+#### III. Execution
+execution: perform the test and collect the result
 
-Separation of the testing preparation and 
+##### Execution activities
+
+* Configure the product under test
+* Branch / backtrack: Let yourself be productively distracted from one course of action in order to p produce an unanticipated new idea
+////////////////////////////////////////
+* Alternate among different activities or perspectives to create or relieve productive tension
+* Vary activities and foci of attention
+* Create and debug an automated series of tests
+* Run and monitor the execution of an automated series of tests
+////////////////////////////////////////
+
+##### Result Collection
+* use automated tools to assist
+* paired testing may be helpful
+
+////////////////////////////////////////
+#### IV. Interpretation
+interpretation: learn from the test
+* Oracle: determine whether program passed the test
+* Oracles are heuristic: they are incomplete and they are fallible.
+
+///////////////////////////////////////
+some heuristics of test interpretation
+* **Product**: consistent with behavior of comparable functions or functional patterns within the product.
+* **Comparable Products**: consistent with behavior of similar functions in comparable products.
+* **A Model’s Predictions**: consistent with expectations derived from a model.
+* **History**: consistent with past behavior.
+
+///////////////////////////////////////
+* **Our Image**: consistent with an image that the organization wants to project.
+* **Claims**: consistent with documentation or ads.
+* **Specifications or Regulations**: consistent with claims that must be met.
+* **User’s Expectations**: consistent with what we think users want.
+* **Purpose**: consistent with apparent purpose.
+Note:
+* Oracle: [https://en.wikipedia.org/wiki/Oracle_(software_testing)]()
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Assessment
 * More detailed explanation of dimensions of Exploratory Testing.
@@ -195,20 +242,35 @@ Separation of the testing preparation and
   * Invite questions about the completeness of their testing.
   * Lead discussions on what testing is needed.
 
-////////////////////////////////////////
-#### 
-
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Pros &amp; Cons
-
+* Someone believes this is sort of radical
+* Someone believes this is efficient and responsive
 ////////////////////////////////////////
 
 #### Strength
-
+<!--presented in course slides-->
 * Customer-focused, risk-focused
 * Responsive to changing circumstances
 * Finds bugs that are otherwise missed
-* 
+////////////////////////////////////////
+<!--more-->
+* Exploratory testing is useful for discovering new information
+* Improves the skills of the tester through simultaneous learning
+  since the tester can learn about the behavior and the failure
+   of the system under test.
+* It increases the defect detection efficiency in terms
+  of defect count, defect severity levels and number of
+  false defect reports.
+* Pre-defined test cases are not required in
+  exploratory testing which hence leads to reduced
+  documentation.
+////////////////////////////////////////
+
+#### Blind Spots
+* The less we know, the more we risk missing.
+* Limited by each tester's weaknesses (can mitigate this with careful management)
+* This is skilled work, juniors are not very good at it.
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Application of Exploratory Testing
@@ -240,9 +302,7 @@ so minimizing dependent artifacts (like pre-prepared test cases) is a desirable 
 * Sometimes also referenced as "paired exploratory testing"
 
 Note:
-The "BBST18-Paired-Exploratory-Testing.pdf" contains some other material about *paired exploratory testing*.
-////////////////////////////////////////
-#### 
+The ["BBST18-Paired-Exploratory-Testing.pdf"](./reference/BBST18-Paired-Exploratory-Testing.pdf) contains some other material about *paired exploratory testing*.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 <!-- .slide: data-background="#09c" id="section-q-and-a" -->
 ## Question &amp; Answer  <!-- .element: style="color:#eee" -->
@@ -258,7 +318,8 @@ The "BBST18-Paired-Exploratory-Testing.pdf" contains some other material about *
 * Automatic logging tools can solve part of the problem.
 ////////////////////////////////////////
 #### How can a team without testing expert using exploratory testing?
-* Since ET requires test design skill in some measure, ET management must constrain the testing problem to fit the level and type of test design skill possessed by the tester.
+* Since ET requires test design skill in some measure, ET management must constrain
+ the testing problem to fit the level and type of test design skill possessed by the tester.
 Note:
 This is incomplete, more points are required.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -280,11 +341,18 @@ This topic can be expanded into a whole representation use with careful consider
 Detailed material are listed at [tour.md](./tour.md)
 /////////////////////////////////////////
 #### Track the result: how to track the result of the testing?
+* Session based testing
+* Workflow breakdowns
+* Dashboards
+
+Note:
 
 ////////////////////////////////////////
 #### Support tools: any toolkit support the ET?
 * the existing tooling constraints the thinking of exploring
 * some CASE tools contains sort of support for manage the ET process
+
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 <!-- .slide: data-background="#09c" id="section-example" -->
 ## Example  <!-- .element: style="color:#eee" -->
@@ -293,32 +361,61 @@ Detailed material are listed at [tour.md](./tour.md)
 
 ## Experience the exploratory testing from specific cases
 
+(TODO...)
+
 * CASE I: 
 
 * CASE II:
 
-* CASE III:
-
+Note: 
+TODO...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Case I: 
+(TODO...)
+
+Note: 
+TODO...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### Case II: 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-### Case III:  
+(TODO...)
 
+Note: 
+TODO...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 <!-- .slide: data-background="#09c" id="section-summary" -->
 ## Summary  <!-- .element: style="color:#eee" -->
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+### Summary of Exploratory Testing
+* It is simultaneous learning, planning, and testing
+* It requires some skills to perform
+* It suits well with other testing techniques
+
+Note:
+Add more summary items accordingly
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ### References
 * Exploratory Software Testing: Tips, tricks, tours and techniques to guide test design.
-  [ref](https://msdn.microsoft.com/en-us/library/jj620911(v=vs.120).aspx)
+  [link](https://msdn.microsoft.com/en-us/library/jj620911.aspx)
+* BBST17: Exploratory testing: [PDF](./reference/BBST17-Exploratory-testing.pdf)
+* BBST18: Paired Exploratory testing: [PDF](./reference/BBST18-Paired-Exploratory-Testing.pdf)
+* The Nature of Exploratory Testing: [PDF](./reference/The-Nature-of-Exploratory-Testing.pdf)
+* A Tutorial in Exploratory Testing: [PDF](./reference/A-Tutorial-in-Exploratory-Testing.pdf)
+* Exploratory Testing: An Overview [PDF](./reference/Exploratory-Testing-An-Overview.pdf)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+### Other material
+(currently not used in pervious contents)
+* Exploratory Testing: A Multiple Case Study [PDF](./reference/Exploratory-Testing-A-Multiple-Case-Study.pdf)
+* How is Exploratory Testing Used:A State-of-the-Practice Survey [PDF](./reference/How-is-Exploratory-Testing-Used-A-State-of-the-Practice-Survey.pdf)
+* 3 Simple Tricks to Make Exploratory Testing More Efficient [link](http://reqtest.com/testing-blog/3-simple-tricks-to-make-exploratory-testing-more-efficient/)
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 <!-- .slide: data-background="#555" id="the-end" -->
 ## Thanks <!-- .element: style="color:#eee" -->
+
 the end <!-- .element: style="color:#aaa" -->
+
+By Jack Q <!-- .element: style="color:#666; font-size: 0.5em" -->
