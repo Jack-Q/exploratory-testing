@@ -363,27 +363,8 @@ Note:
 
 ## Experience the exploratory testing from specific cases
 
-(TODO...)
+* Case Elaboration
 
-* CASE I: 
-
-* CASE II:
-
-Note: 
-TODO...
-****************************************
-### Case I: 
-(TODO...)
-
-Note: 
-TODO...
-****************************************
-### Case II: 
-(TODO...)
-
-Note: 
-TODO...
-****************************************
 
 <!-- .slide: data-background="#09c" id="section-summary" -->
 ## Summary  <!-- .element: style="color:#eee" -->
