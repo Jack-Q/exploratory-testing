@@ -4,9 +4,8 @@
 <!-- .slide: data-background="#555" id="the-beginning" -->
 ## Exploratory Testing <!-- .element: style="color:#eee" -->
 
-By Group 6 <!-- .element: style="color:#aaa" -->
 
-`06·26·46·56·66` <!-- .element: style="color:#579;font-size: 0.5em" -->
+`Jack Q` <!-- .element: style="color:#579;font-size: 0.5em" -->
 ****************************************
 
 ## Agenda
