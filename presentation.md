@@ -364,6 +364,8 @@ Note:
 
 * Case Elaboration
 
+****************************************
+
 
 <!-- .slide: data-background="#09c" id="section-summary" -->
 ## Summary  <!-- .element: style="color:#eee" -->
